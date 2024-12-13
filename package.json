@@ -1,0 +1,45 @@
+{
+  "name": "vue-cli-plugin-tsconfig",
+  "version": "1.0.0",
+  "description": "A vue-cli plugin to configure the path of typescript configuration file",
+  "author": "yuewuzhijian",
+  "license": "MIT",
+  "homepage": "https://github.com/yuewuzhijian/vue-cli-plugin-tsconfig",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuewuzhijian/vue-cli-plugin-tsconfig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuewuzhijian/vue-cli-plugin-tsconfig/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "plugin",
+    "tsconfig",
+    "typescript"
+  ],
+  "main": "dist/index.cjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint . --ext .js,.cjs,.mjs,.ts --fix",
+    "format": "prettier --write 'src/**/*.{js,ts}'",
+    "publish": "npm publish --registry https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vue/cli-service": "^5.0.8",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.1",
+    "rollup": "^4.28.0",
+    "typescript": "^5.7.2"
+  }
+}
